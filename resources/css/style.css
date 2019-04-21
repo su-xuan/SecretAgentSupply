@@ -1,0 +1,126 @@
+* {
+  font-size: 18px; /* 1rem=18px */
+  font-family: Helvetica;
+  display: block;
+  color: white;
+}
+
+header, .logo, .main, .BigScreen, .menu, .category, .LocationHours, footer {
+  display: flex;
+}
+header, .TitleContainer, .pictures p, footer{
+  background-color: black;
+}
+
+header {
+
+}
+
+
+.logo {
+  align-items: center;
+}
+.logo img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+.logo p {
+  font-size: 1rem;
+  padding: 0.66rem 1rem;
+}
+
+.main {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+.BigScreen {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.TitleContainer {
+  font-weight: bold;
+  width: 20rem;
+  height: 11rem;
+  position: relative;
+  top: 9rem;
+
+}
+
+.TitleContainer h3 {
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0.25rem;
+  padding-left: 3rem;
+}
+.TitleContainer h1 {
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+
+.menu {
+  background-color: firebrick;
+  width: 100%
+}
+.menu>.BigScreen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category>.BigScreen {
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+.pictures {
+  display: block;
+  width: 30%;
+  border: 4px solid black;
+}
+
+.pictures img {
+  height: 9rem;
+  flex-shrink: 2;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pictures p {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.LocationHours>.BigScreen {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+
+}
+.details {
+  width: 35%;
+}
+
+.top {
+  background-color: black;
+}
+.top p {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.bottom p {
+  color: black;
+}
+
+footer {
+  text-align: left;
+}
+
+footer .BigScreen {
+  height: 5rem;
+  align-items: center;
+}
