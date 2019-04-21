@@ -5,15 +5,17 @@
   color: white;
 }
 
+@media only screen and (min-width:960px) {
+  .MediumScreen {
+    display: none;
+  }
+}
+
 header, .logo, .main, .BigScreen, .menu, .category, .LocationHours, footer {
   display: flex;
 }
 header, .TitleContainer, .pictures p, footer{
   background-color: black;
-}
-
-header {
-
 }
 
 
@@ -40,6 +42,9 @@ header {
   width: 960px;
   margin: 0 auto;
 }
+.MediumScreen {
+  margin: 0 auto;
+}
 
 .TitleContainer {
   font-weight: bold;
@@ -47,9 +52,7 @@ header {
   height: 11rem;
   position: relative;
   top: 9rem;
-
 }
-
 .TitleContainer h3 {
   font-size: 1rem;
   padding-top: 2rem;
@@ -63,11 +66,18 @@ header {
 
 .menu {
   background-color: firebrick;
-  width: 100%
+  width: 100%;
 }
 .menu>.BigScreen {
   display: flex;
   justify-content: space-between;
+}
+.menu>.MediumScreen {
+  margin: 0 auto;
+}
+.menu span {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .category>.BigScreen {
@@ -79,9 +89,9 @@ header {
   width: 30%;
   border: 4px solid black;
 }
-
 .pictures img {
   height: 9rem;
+  max-width: 60%;
   flex-shrink: 2;
   margin: 0 auto;
   padding-top: 2rem;
@@ -124,3 +134,61 @@ footer .BigScreen {
   height: 5rem;
   align-items: center;
 }
+
+
+
+@media only screen and (max-width: 1024px){
+  /* For destop*/
+  .menu>.BigScreen {
+    display: none;
+  }
+  .pictures {
+    width: 47%;
+  }
+  .glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*For cellphone*/
+  .main {
+    height: 15rem;
+  }
+  .TitleContainer {
+    font-weight: bold;
+    position: relative;
+    top: 10rem;
+    width: 100%;
+    height: 5rem;
+  }
+  .TitelContainer h3 {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .TitleContainer h1 {
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
+  .menu>.BigScreen {
+    display: none;
+  }
+  .pictures {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .watch, .glasses {
+    display: none;
+  }
+  .LocationHours>.BigScreen {
+    display: block;
+  }
+  .details {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+  }
+  footer {
+    text-align: center;
+  }
